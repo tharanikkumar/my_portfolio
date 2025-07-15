@@ -57,7 +57,7 @@ export default function Greeting() {
                 </a>
                 {greeting.resumeLink && (
                   <a
-                    href="https://drive.google.com/file/d/1zaoWuaDxlPLT3f8uOTKpAlaA2SDTnfjn/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1k_9VGcopdJg28NY5ei2Mm7hOlC-ePM0L/view?usp=drive_link"
                     className="custom-dark-button"
                     target="_blank"
                     rel="noopener noreferrer"
