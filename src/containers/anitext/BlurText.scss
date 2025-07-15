@@ -1,0 +1,15 @@
+.blur-text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px; // You can adjust size (e.g. 3rem for larger)
+  line-height: 2.5rem; // Controls spacing between lines
+  font-weight: 600;
+  color: #ffffff; // Optional: adjust for dark mode
+  margin-bottom: 1.5rem;
+}
+
+.blur-segment {
+  display: inline-block;
+  will-change: transform, filter, opacity;
+  margin-right: 0.25rem;
+}

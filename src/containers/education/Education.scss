@@ -1,0 +1,66 @@
+.education-heading {
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 1rem; // ⬅️ Added spacing below heading
+}
+
+.education-text-subtitle {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2.5rem; // ⬅️ Added spacing below subtitle before cards
+}
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px 0px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.education-section > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.education-card-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px; // ⬅️ Increased top padding to push cards further down
+}
+
+/* Responsive styles */
+@media (max-width: 1380px) {
+  .education-card-container {
+    padding-top: 30px;
+  }
+
+  .education-heading {
+    font-size: 40px;
+    margin-bottom: 0.8rem;
+  }
+
+  .education-text-subtitle {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-card-container {
+    padding-top: 20px;
+  }
+
+  .education-heading {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .education-text-subtitle {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+  }
+}

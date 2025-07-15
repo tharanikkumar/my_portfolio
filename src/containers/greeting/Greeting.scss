@@ -1,0 +1,148 @@
+@import "../../_globalColor";
+
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.greet-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 3.7rem;
+  background-color: white;
+  color: black;
+}
+
+.dark-mode.greet-main {
+  background-color: #000000; // true black
+  color: white;
+}
+
+.greeting-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.empty-div {
+  margin-bottom: 75px;
+}
+
+.greeting-text {
+  font-size: 50px;
+  line-height: 1.1;
+  color: $textColor !important;
+}
+
+.greeting-text-p {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.greeting-image-div > img,
+.greeting-image-div > div {
+  width: 100%;
+  max-width: 600px; // increased max size
+  height: auto;
+}
+
+.button-greeting-div {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.custom-dark-button {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+
+.custom-dark-button:hover {
+  background-color: #9a9e9b;
+  color: black;
+}
+
+.dark-mode .custom-dark-button {
+  background-color: rgb(239, 239, 239) !important;
+  color: black !important;
+  border: 0px solid white !important;
+}
+
+.dark-mode .custom-dark-button:hover {
+  background-color: #9a9e9b !important;
+  color: black !important;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-10deg); }
+  20% { transform: rotate(12deg); }
+  30% { transform: rotate(-10deg); }
+  40% { transform: rotate(9deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+/* Responsive */
+@media (max-width: 1380px) {
+  .greeting-text { font-size: 50px; }
+  .greeting-text-p { font-size: 20px; }
+}
+
+@media (max-width: 768px) {
+  .greeting-main {
+    display: block;
+  }
+
+  .greeting-image-div {
+    height: 600px;
+  }
+
+  .greeting-image-div > img,
+  .greeting-image-div > div {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .greeting-text,
+  .greeting-text-p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+    width: auto;
+  }
+}

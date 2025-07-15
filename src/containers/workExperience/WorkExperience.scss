@@ -1,0 +1,52 @@
+.experience-cards-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem; // Optional spacing between cards
+}
+.experience-card,
+.experience-card-dark {
+  width: 350px;  // ✅ Default width
+  max-width: 90vw;
+  margin: 0rem;
+}
+
+.experience-heading {
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 2rem; 
+}
+.experience-text-subtitle {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2.5rem; // ⬅️ Added spacing below subtitle before cards
+}
+
+.experience-container {
+  display: flex;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+  padding-top: 1px;
+  
+}
+
+.experience-container > * {
+  flex: 1;
+}
+
+/* Media Query */
+
+@media (max-width: 1380px) {
+  .experience-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+}

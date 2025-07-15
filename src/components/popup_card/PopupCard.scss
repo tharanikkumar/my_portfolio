@@ -1,0 +1,128 @@
+.popup-overlay {
+  position: fixed; // ✅ allows background scroll
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: start; // keeps it near top on scroll
+  z-index: 999;
+  padding-top: 10vh;
+}
+
+
+.popup-card {
+  background-color: rgba(255, 255, 255, 0.88);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  height: auto; /* Let it expand based on content */
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 1rem 1.5rem 1.5rem;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-header-row {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem; /* pushes below the close button */
+  gap: 1rem;
+}
+
+.popup-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.popup-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-company {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.popup-role {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.popup-scrollable-content {
+  margin-top: 1rem;
+  flex: 1;
+  overflow-y: auto;
+  max-height: 60vh;
+  padding-right: 6px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #aaa transparent;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+
+.popup-details li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.popup-footer {
+  display: flex;
+  justify-content: flex-start; // Align to left
+  gap: 12px;                   // Add space between buttons
+  margin-top: 1.5rem;
+}
+
+.popup-website-btn {
+  background-color: black;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  font-size: 16px;
+}
+
+.popup-website-btn:hover {
+  background-color: #333;
+}

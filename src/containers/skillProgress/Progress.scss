@@ -1,0 +1,123 @@
+@import "../../_globalColor";
+
+/* Container */
+.skills-container {
+  display: flex;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+.skills-container > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+/* Main heading */
+.skills-bar {
+  font-size: 28px;
+  width: 100%;
+}
+
+.skill-subheading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: hsla(0, 16%, 94%, 0.91);
+}
+
+/* Skill grid – Always 4 per row on desktop */
+.skill-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); // Exactly 4 items per row
+  gap: 20px;
+  padding: 10px 0;
+}
+
+/* Each skill block */
+.skill {
+  margin-bottom: 10px;
+}
+
+/* Skill label */
+.stack-name {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+/* Bar + percentage */
+.meter-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.meter {
+  flex: 1;
+  height: 20px;
+  background: $progressBarBackground;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  background-color: $educationCardBorder;
+  border-radius: 25px;
+  transition: width 0.5s ease;
+}
+
+.percentage {
+  min-width: 40px;
+  text-align: right;
+  font-size: 14px;
+  color: #ffffffcc;
+}
+
+/* Illustration */
+.skills-image > img {
+  margin-left: 80px;
+  max-width: 90%;
+  height: auto;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .skill-columns {
+    grid-template-columns: repeat(2, 1fr); // 2 per row on tablets
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-columns {
+    grid-template-columns: 1fr; // 1 per row on mobile
+  }
+}
+
+@media (max-width: 1456px) {
+  .skills-bar {
+    line-height: 4rem;
+  }
+
+  .skills-image {
+    display: none;
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-bar {
+    line-height: 3rem;
+    margin: 20px;
+  }
+
+  .skills-image {
+    display: none;
+    order: 2;
+  }
+}
