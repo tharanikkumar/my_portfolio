@@ -282,7 +282,7 @@ const achievementSection = {
     {
       title: "Deloitte",
       subtitle: "Data Analytics Job Simulation",
-      image: require("./assets/images/deloitte-logo.jpg"),
+      image: require("./assets/images/deloitte_logo.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
