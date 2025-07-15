@@ -19,7 +19,6 @@ import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
-import SplashCursor from "/Users/tharanikkumar/Desktop/My Projects/developerFolio/src/containers/splashcursor/SplashCursor.js";
 import "./Main.scss";
 
 const Main = () => {
