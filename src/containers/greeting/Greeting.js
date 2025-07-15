@@ -62,7 +62,7 @@ export default function Greeting() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Download my resume
+                    View resume
                   </a>
                 )}
               </div>
