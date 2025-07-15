@@ -1,7 +1,7 @@
 import React, {useState, useContext} from "react";
-import "/Users/tharanikkumar/Desktop/My Projects/developerFolio/src/components/experienceCard/ExperienceCard.scss";
+import "../../components/experienceCard/ExperienceCard.scss";
 import ColorThief from "colorthief";
-import PopupCardPortal from "/Users/tharanikkumar/Desktop/My Projects/developerFolio/src/components/popup_card/PopupCardPortal.js";
+import PopupCardPortal from "../../components/popup_card/PopupCardPortal";
 import {FaGithub} from "react-icons/fa";
 
 

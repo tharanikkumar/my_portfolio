@@ -1,6 +1,6 @@
 import {motion} from "framer-motion";
 import {useEffect, useRef, useState, useMemo} from "react";
-import "/Users/tharanikkumar/Desktop/My Projects/developerFolio/src/containers/anitext/BlurText.scss";
+import "./BlurText.scss";
 
 
 const buildKeyframes = (from, steps) => {

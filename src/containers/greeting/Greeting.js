@@ -6,9 +6,9 @@ import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-import BlurText from "/Users/tharanikkumar/Desktop/My Projects/developerFolio/src/containers/anitext/BlurText.js";
+import BlurText from "../anitext/BlurText.js";
 import VariableProximity from "../varprox/VariableProximity.js";
-import berlinSubmission from "/Users/tharanikkumar/Desktop/My Projects/developerFolio/src/assets/lottie/African Developer.json";
+import berlinSubmission from "../../assets/lottie/African Developer.json";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);

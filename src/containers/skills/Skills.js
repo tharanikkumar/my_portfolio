@@ -6,7 +6,7 @@ import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
-import berlinSubmission from "/Users/tharanikkumar/Desktop/My Projects/developerFolio/src/assets/lottie/Basketball.json";
+import berlinSubmission from "../../assets/lottie/Basketball.json";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
